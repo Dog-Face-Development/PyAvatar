@@ -50,7 +50,8 @@ def avatars():
         img_account = image  # needs to be a GIF
         title_account = Label(account, image=img_account)
         text_account = Label(account, text=name)
-        hyperlink_account = Label(account, text=hyperlink, fg="blue", cursor="hand2")
+        hyperlink_account = Label(
+            account, text=hyperlink, fg="blue", cursor="hand2")
 
         # Layout elements in frame
         title_account.pack(side=TOP)
