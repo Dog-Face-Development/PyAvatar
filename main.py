@@ -16,6 +16,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 import webbrowser
 from tkinter import *
+
 # Import Statements
 
 # Account Avatar Function
@@ -31,10 +32,9 @@ def avatars():
     window.title("Online Account Avatars and Banners")
 
     # Window Title
-    title = Label(window,
-                  text="Online Account Avatars and Banners",
-                  fg="blue",
-                  font="Consolas 20")
+    title = Label(
+        window, text="Online Account Avatars and Banners", fg="blue", font="Consolas 20"
+    )
     title.grid(row=1, column=1, columnspan=5)
 
     # Placeholder Image Constant
@@ -50,10 +50,7 @@ def avatars():
         img_account = image  # needs to be a GIF
         title_account = Label(account, image=img_account)
         text_account = Label(account, text=name)
-        hyperlink_account = Label(account,
-                                  text=hyperlink,
-                                  fg="blue",
-                                  cursor="hand2")
+        hyperlink_account = Label(account, text=hyperlink, fg="blue", cursor="hand2")
 
         # Layout elements in frame
         title_account.pack(side=TOP)
