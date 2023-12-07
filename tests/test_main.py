@@ -1,6 +1,7 @@
 """Test main.py."""
 # pylint: disable=wrong-import-position, too-many-function-args
 
+from main import avatars
 import sys
 import os
 import unittest
@@ -8,8 +9,6 @@ from tkinter import Tk, Frame, Label
 from unittest.mock import patch
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-from main import avatars
 
 
 class TestAccounts(unittest.TestCase):
