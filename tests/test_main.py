@@ -1,12 +1,13 @@
 """Test main.py."""
 # pylint: disable=import-error, wrong-import-position, too-many-function-args
 
-from main import avatars
-import sys
 import os
+import sys
 import unittest
-from tkinter import Tk, Frame, Label
+from tkinter import Frame, Label, Tk
 from unittest.mock import patch
+
+from main import avatars
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
